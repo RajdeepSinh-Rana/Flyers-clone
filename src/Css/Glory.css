@@ -1,36 +1,115 @@
-.DAYS{
-    height: 60vh;
+/* Main Styling */
+.DAYS {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.logobox {
+  height: 60vh;
+  width: 45%;
+  margin-left: 40px;
+}
+
+.img1o {
+  height: 90%;
+  width: 98%;
+}
+
+.textbox {
+  height: 100%;
+  width: 47%;
+  text-align: center;
+  color: whitesmoke;
+  overflow: hidden;
+  margin-right: 30px;
+}
+
+.ddy {
+  font-size: 3rem;
+  padding-top: 12%;
+  padding-bottom: 30px;
+}
+
+.rrt {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.now {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #ff6600; /* Example button color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+
+/* For tablets and medium screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .DAYS {
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+
+  .logobox, .textbox {
+    width: 80%;
+    height: auto;
+    margin: 0;
+  }
+
+  .img1o {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    height: auto;
   }
-  .logobox{
-    height: 60vh;
-    width: 45%;
-    margin-left: 40px;
 
+  .ddy {
+    font-size: 2.5rem;
+    padding-top: 8%;
   }
-  .img1o{
-    height: 90%;
-    width: 98%;
-  }
-  .textbox{
-    height: 100%;
-    width: 47%;
-    text-align: center;
-    color: whitesmoke;
-    overflow: hidden;
-    margin-right: 30px;
 
+  .rrt {
+    font-size: 16px;
   }
-  .ddy{
-    font-size: 3rem;
-    padding-top: 12%;
-    padding-bottom: 30px;
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .DAYS {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
-  .rrt{
-    font-size: 18px;
-    padding-bottom: 20px;
+
+  .logobox, .textbox {
+    width: 90%;
+    margin: 0;
+    height: auto;
   }
+
+  .img1o {
+    width: 80%; /* Smaller image size for mobile */
+    height: auto;
+  }
+
+  .ddy {
+    font-size: 1.8rem; /* Smaller text size for mobile */
+    padding-top: 5%;
+  }
+
+  .rrt {
+    font-size: 14px; /* Smaller paragraph text size for mobile */
+  }
+
+  .now {
+    font-size: 14px; /* Smaller button text size for mobile */
+  }
+}

@@ -1,8 +1,10 @@
-.Mainbox{
+.Mainbox {
   height: 110vh;
   width: 100%;
+  position: relative; /* Set position relative for child elements */
 }
-.backgroundimg{
+
+.backgroundimg {
   background-image: url(https://drinkflyers.com/cdn/shop/files/Sunset_Spritz_Family_Hero_-_2_a23c64f7-c094-4de3-927b-0a4e4e2be23e.jpg?v=1719421138&width=2000);
   height: 100%;
   max-width: 100%;
@@ -10,49 +12,156 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: start;
-  align-items:first baseline;
+  align-items: first baseline;
 }
-.text{
+
+.text {
   height: 45%;
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center text */
   align-items: center;
   margin-top: 7%;
+  position: relative; /* Position text relative */
+}
 
+.leftimg {
+  position: absolute; /* Position absolute */
+  top: 20%; /* Adjust the vertical position */
+  left: 60px; /* Horizontal position */
+  width: 35%; /* Initial size */
+  max-width: 480px; /* Max width set to 480px */
 }
-.leftimg{
-  height: 80%;
-  width: 30%;
-  margin-left: 60px;
-}
-.img1{
-  height: 350px;
-  width: 250px;
+
+.img1 {
+  max-width: 100%;
+  height: auto;
   rotate: 350deg;
 }
-.centertxt{
-  height: 90%;
-  width: 50%;
-  margin-right: 150px;
+
+.centertxt {
+  width: 60%;
   text-align: center;
   color: whitesmoke;
+  z-index: 1; /* Ensure text appears above the image */
 }
 
-.s1{
+.s1 {
+  width: 100%;
   color: aliceblue;
   font-size: 4rem;
   text-align: center;
+  margin-left: 100px;
+  border: 1px solid red;
 }
-.h4{
+
+.h4 {
   padding-top: 20px;
   padding-bottom: 15px;
+  margin-left: 00px;
+border: 1px solid red;
 }
-.now{
+
+.now {
   height: 55px;
   width: 120px;
   border: none;
   border-radius: 10px;
   font-weight: 500;
   background-color: #CD9E53;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .s1 {
+    font-size: 3rem;
+  }
+
+  .centertxt {
+    margin-top: -20px; /* Move text upward */
+  }
+
+  .leftimg {
+    width: 30%; /* Maintain size */
+  }
+}
+
+@media (max-width: 992px) {
+  .centertxt {
+    width: 70%;
+    margin-top: -40px; /* Move text upward */
+  }
+
+  .leftimg {
+    width: 28%; /* Slightly smaller */
+  }
+
+  .s1 {
+    font-size: 2.5rem;
+  }
+
+  .now {
+    width: 100px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Mainbox {
+    height: 100vh;
+  }
+
+  .s1 {
+    font-size: 2rem;
+  }
+
+  .h4 {
+    font-size: 1.2rem;
+  }
+
+  .now {
+    width: 120px;
+    height: 40px;
+  }
+
+  .centertxt {
+    width: 80%;
+    margin-top: -60px; /* Move text upward */
+  }
+
+  .leftimg {
+    width: 25%; /* Keep it more visible */
+  }
+}
+
+@media (max-width: 576px) {
+  .text {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .centertxt {
+    width: 90%;
+    margin-top: -80px; /* Move text upward */
+  }
+
+  .s1 {
+    font-size: 1.5rem;
+  }
+
+  .img1 {
+    height: auto;
+  }
+
+  .leftimg {
+    width: 35%; /* Full width on small screens */
+    max-width: 440px; /* Ensure it does not exceed 480px */
+    left: 20px;
+  }
+
+  .now {
+    width: 120px;
+    height: 35px;
+  }
 }

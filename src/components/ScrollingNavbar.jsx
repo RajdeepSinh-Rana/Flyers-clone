@@ -97,6 +97,30 @@ const ScrollingNavbar = () => {
             <path d="M100.5 2L198 99.5L100.5 197L3 99.5L100.5 2Z" />
           </svg>
         </span>
+        <span>FREE SHIPPING on orders $35+ </span>
+        <span>
+          <svg className="rotate" viewBox="0 0 200 200">
+            <path d="M100.5 2L198 99.5L100.5 197L3 99.5L100.5 2Z" />
+          </svg>
+        </span>
+        <span>FREE SHIPPING on orders $35+ </span>
+        <span>
+          <svg className="rotate" viewBox="0 0 200 200">
+            <path d="M100.5 2L198 99.5L100.5 197L3 99.5L100.5 2Z" />
+          </svg>
+        </span>
+        <span>FREE SHIPPING on orders $35+ </span>
+        <span>
+          <svg className="rotate" viewBox="0 0 200 200">
+            <path d="M100.5 2L198 99.5L100.5 197L3 99.5L100.5 2Z" />
+          </svg>
+        </span>
+        <span>FREE SHIPPING on orders $35+ </span>
+        <span>
+          <svg className="rotate" viewBox="0 0 200 200">
+            <path d="M100.5 2L198 99.5L100.5 197L3 99.5L100.5 2Z" />
+          </svg>
+        </span>
       </div>
     </div>
       
