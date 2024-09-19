@@ -1,167 +1,111 @@
+/* Main container that covers the entire viewport height */
 .Mainbox {
-  height: 110vh;
+  height: 100vh;
   width: 100%;
-  position: relative; /* Set position relative for child elements */
+  position: relative;
 }
 
+/* Background image settings */
 .backgroundimg {
   background-image: url(https://drinkflyers.com/cdn/shop/files/Sunset_Spritz_Family_Hero_-_2_a23c64f7-c094-4de3-927b-0a4e4e2be23e.jpg?v=1719421138&width=2000);
   height: 100%;
-  max-width: 100%;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: start;
-  align-items: first baseline;
+  justify-content: center; /* Center horizontally */
+  align-items:start; /* Center vertically */
 }
 
-.text {
-  height: 45%;
-  width: 80%;
-  display: flex;
-  justify-content: center; /* Center text */
-  align-items: center;
-  margin-top: 7%;
-  position: relative; /* Position text relative */
-}
-
-.leftimg {
-  position: absolute; /* Position absolute */
-  top: 20%; /* Adjust the vertical position */
-  left: 60px; /* Horizontal position */
-  width: 35%; /* Initial size */
-  max-width: 480px; /* Max width set to 480px */
-}
-
-.img1 {
-  max-width: 100%;
-  height: auto;
-  rotate: 350deg;
-}
-
+/* Center text and button container */
 .centertxt {
-  width: 60%;
   text-align: center;
   color: whitesmoke;
-  z-index: 1; /* Ensure text appears above the image */
+  z-index: 1;
+  padding: 20px;
+  margin-top: 80px;
+
 }
 
 .s1 {
-  width: 100%;
-  color: aliceblue;
-  font-size: 4rem;
-  text-align: center;
-  margin-left: 100px;
-  border: 1px solid red;
+  font-size: 3.5rem;
+  color: #f3f4f6;
+  margin: 10px 0;
 }
 
 .h4 {
-  padding-top: 20px;
-  padding-bottom: 15px;
-  margin-left: 00px;
-border: 1px solid red;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .now {
-  height: 55px;
-  width: 120px;
+  height: 50px;
+  width: 150px;
   border: none;
-  border-radius: 10px;
-  font-weight: 500;
-  background-color: #CD9E53;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: #CD9E53 !important;
+  color: white;
   cursor: pointer;
+  padding: 10px;
 }
 
-/* Responsive Design */
+/* Media Queries for responsive adjustments */
+
+/* Large screens (up to 1200px) */
 @media (max-width: 1200px) {
   .s1 {
     font-size: 3rem;
   }
-
-  .centertxt {
-    margin-top: -20px; /* Move text upward */
-  }
-
-  .leftimg {
-    width: 30%; /* Maintain size */
-  }
-}
-
-@media (max-width: 992px) {
-  .centertxt {
-    width: 70%;
-    margin-top: -40px; /* Move text upward */
-  }
-
-  .leftimg {
-    width: 28%; /* Slightly smaller */
-  }
-
-  .s1 {
-    font-size: 2.5rem;
-  }
-
   .now {
-    width: 100px;
+    width: 130px;
     height: 45px;
   }
 }
 
-@media (max-width: 768px) {
-  .Mainbox {
-    height: 100vh;
-  }
-
+/* Tablets (up to 992px) */
+@media (max-width: 992px) {
   .s1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
-
   .h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-
   .now {
     width: 120px;
     height: 40px;
   }
-
-  .centertxt {
-    width: 80%;
-    margin-top: -60px; /* Move text upward */
-  }
-
-  .leftimg {
-    width: 25%; /* Keep it more visible */
-  }
 }
 
-@media (max-width: 576px) {
-  .text {
-    width: 100%;
-    margin-top: 80px;
+/* Small tablets and mobile landscape (up to 768px) */
+@media (max-width: 768px) {
+  .Mainbox {
+    height: 100vh;
   }
-
-  .centertxt {
-    width: 90%;
-    margin-top: -80px; /* Move text upward */
-  }
-
   .s1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
+  .h4 {
+    font-size: 1rem;
+  }
+  
+}
 
-  .img1 {
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .Mainbox {
     height: auto;
+    padding: 20px;
   }
-
-  .leftimg {
-    width: 35%; /* Full width on small screens */
-    max-width: 440px; /* Ensure it does not exceed 480px */
-    left: 20px;
+  .backgroundimg {
+    height: 80%;
+    background-position: center;
   }
-
-  .now {
-    width: 120px;
-    height: 35px;
+  .s1 {
+    font-size: 1.8rem;
   }
+  .h4 {
+    font-size: 1rem;
+  }
+  
 }

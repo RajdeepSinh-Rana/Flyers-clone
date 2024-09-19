@@ -4,6 +4,8 @@ import { doc, getDoc, updateDoc, arrayUnion, db } from '../Firebase/firebase';
 import { getAuth } from 'firebase/auth';
 import './SingleProductPage.css';
 import Navbar from '../components/Navbar';
+import Glory from '../components/Glory';
+import Winner from '../components/Winner';
 
 const SingleProductPage = () => {
   const { id } = useParams();
@@ -127,6 +129,8 @@ const SingleProductPage = () => {
           </div>
         </div>
       </div>
+      <Glory/>
+      <Winner/>
     </>
   );
 };

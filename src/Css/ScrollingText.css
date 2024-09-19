@@ -1,82 +1,129 @@
+.Maincontainer {
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .Maincontainer{
-    height: 30vh;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .scrollingtext{
-    height: 60%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.scrollingtext {
+  height: 60%;
+  width: auto; /* Adjusted for better responsiveness */
+  display: flex;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center;
+  white-space: nowrap; /* Prevent text wrapping */
+}
 
+.img-wrapper {
+  height: auto;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+}
 
-  }
-  .img-wrapper{
-    height: auto;
-    width: 18%;
-    display: flex;
-    justify-content: center;
-  }
-  .imgsize{
-    height: 60px !important;
-    width:90% !important;
-    margin-left: 260px;
-  }
-  .sloganBox{
-    height: 180px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.imgsize {
+  height: 60px !important;
+  width: auto !important; /* Adjust width for responsiveness */
+  margin: 0; /* Remove margin */
+}
+
+.sloganBox {
+  height: auto; /* Adjusted height for better responsiveness */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.slogan {
+  width: 80%; /* Adjust width for responsiveness */
+}
+
+.slogan h4 {
+  font-size: 2rem; /* Use relative units for scalability */
+  color: #CD9E53;
+  text-align: center;
+  margin: 0;
+}
+
+.spbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.sptextbox {
+  width: 50%;
+  text-align: left;
+  color: aliceblue;
+}
+
+.sptextbox h3 {
+  font-size: 2rem; /* Use relative units for scalability */
+}
+
+.sptextbox button {
+  margin-top: 20px;
+  height: 50px;
+  width: 250px;
+  background-color: #CD9E53;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-size: 1rem; /* Adjust font size for button */
+}
+
+.spimgbox {
+  width: 44%;
+  height: 690px;
+  background-image: url(https://drinkflyers.com/cdn/shop/files/Margarita-Hero-20240520--2-_1.jpg?v=1716316708&width=2000);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .spbox {
+    flex-direction: column-reverse; 
     align-items: center;
-  }
-  .slogan{
-      height: 100%;
-      width: 64%;
   }
   .slogan h4{
-    font-size: 29px;
-    color: #CD9E53;
-    text-align: center;
-    /* font-family:Georgia, 'Times New Roman', Times, serif; */
-    margin-top: 40px;
+    font-size: 20px;
   }
-
-  .spbox{
-    height: 98vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-   align-items: center; 
-  }
-  .sptextbox{
-    height: 40%;
-    width: 50%;
-    margin-left: 50px;
-    margin-top: 40px;
-    color: aliceblue;
+  .sptextbox {
+    width: 99%; /* Adjust width */
+    text-align: left;
+    margin-bottom: 20px; /* Add space between text and image */
   }
   .sptextbox h3{
-    font-size: 35px;
+    margin-top: 40px;
+    font-size: 28px;
   }
-  .sptextbox button{
-margin-top: 30px;
-height: 50px;
-background-color: #CD9E53;
-border-radius: 8px;
-border: none;
+  
+  .spimgbox {
+    width: 90%; /* Adjust width */
+    height: 400px; /* Adjust height */
+    margin-bottom: 10px;
   }
-  .spimgbox{
-    height: 90%;
-    width: 44%;
-    margin-right: 40px;
-    background-image: url(https://drinkflyers.com/cdn/shop/files/Margarita-Hero-20240520--2-_1.jpg?v=1716316708&width=2000);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  
+  .sptextbox {
+    width: 50%;
+    font-size: 0.2rem; 
+    border: 1px solid red;
   }
+.sptextbox h3{
+  font-size: 20px
+}
+  .spimgbox {
+    height: 150px; /* Adjust height for very small screens */
+  }
+}

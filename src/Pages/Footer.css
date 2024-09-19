@@ -1,119 +1,110 @@
-/* Footer Styling */
 .footer {
-    height: 38vh;
-    margin-top: 30px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    color: #fff;
-    background-color: #000; /* Add a black background */
-  }
-  
-  /* Logo Section */
-  .logo-container {
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .logo {
-    width: 100px;
-    height: auto;
-  }
-  
-  /* Text color and size utility classes */
-  .color1 {
-    color: #fff;
-  }
-  
-  .color-font {
-    font-size: 30px;
-    color: #fff;
-  }
-  
-  /* Footer Section Layout */
+  height: auto; /* Changed from fixed height */
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background-color: #000; /* Black background */
+}
+
+.logo-container {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Text color and size utility classes */
+.color1 {
+  color: #fff;
+}
+
+.color-font {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Footer Section Layout */
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Individual Section Styling */
+.footer-section1, .footer-section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left; /* Default alignment to left */
+  list-style: none;
+}
+
+.footer-section1 ul, .footer-section2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section1 li, .footer-section2 li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Special Section: Stay Awhile */
+.stay-awhile {
+  width: 40%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: left; /* Ensure text aligns to the left */
+}
+
+/* Social Media Icons */
+.social-media .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.social-icon:hover {
+  color: #ff7f50; /* Coral color on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 786px) {
   .footer-sections {
-    height: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  /* Individual Section Styling */
-  .footer-section1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
-    list-style: none;
-  }
-  
-  .footer-section1 ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section1 li {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #fff;
-  }
-  
-  /* Special Section: Stay Awhile */
-  .stay-awhile {
-    width: 40%;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
-  }
-  
-  /* Social Media Icons */
-  .social-media .social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .social-icon {
-    font-size: 24px;
-    margin: 0 10px;
-    color: #fff;
-  }
-  
-  .social-icon:hover {
-    color: #ff7f50; /* Coral color on hover */
-  }
-  
-  /* Social Media Icons (if using images) */
-  .social-icon-img {
-    width: 30px;
-    height: auto;
-    margin: 0 10px;
-  }
-  
-  .social-icon-img:hover {
-    opacity: 0.7; /* Optional hover effect */
-  }
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .footer-sections {
       flex-direction: column;
-    }
-  
-    .footer-section {
-      margin: 10px 0;
-    }
-  
-    .stay-awhile {
-      font-size: 24px;
-    }
+      align-items: flex-start; /* Align all sections to the left */
+      text-align: left; /* Ensure all text is aligned to the left */
   }
-  
+
+  .footer-section1, .footer-section2 {
+      align-items: flex-start; /* Ensure text aligns to the left */
+      margin: 10px 0;
+  }
+
+  .stay-awhile {
+      font-size: 24px;
+      text-align: left; /* Ensure text aligns to the left */
+      width: 100%; /* Make it full width on small screens */
+  }
+}
