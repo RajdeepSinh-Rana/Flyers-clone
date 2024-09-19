@@ -1,0 +1,58 @@
+.Mainbox{
+  height: 110vh;
+  width: 100%;
+}
+.backgroundimg{
+  background-image: url(https://drinkflyers.com/cdn/shop/files/Sunset_Spritz_Family_Hero_-_2_a23c64f7-c094-4de3-927b-0a4e4e2be23e.jpg?v=1719421138&width=2000);
+  height: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: start;
+  align-items:first baseline;
+}
+.text{
+  height: 45%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7%;
+
+}
+.leftimg{
+  height: 80%;
+  width: 30%;
+  margin-left: 60px;
+}
+.img1{
+  height: 350px;
+  width: 250px;
+  rotate: 350deg;
+}
+.centertxt{
+  height: 90%;
+  width: 50%;
+  margin-right: 150px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.s1{
+  color: aliceblue;
+  font-size: 4rem;
+  text-align: center;
+}
+.h4{
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.now{
+  height: 55px;
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #CD9E53;
+}

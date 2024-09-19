@@ -1,0 +1,24 @@
+.scrollbox{
+  height: 5vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 5px;
+}
+.scrolling-text {
+    white-space: nowrap;
+    font-size: 1rem;
+    font-family: "Mohave", sans-serif;
+    font-weight: 400;
+    color: #CD9E53 !important;
+    padding-top: -50px;
+  }
+  
+  .rotate {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    fill: #CD9E53;
+  }

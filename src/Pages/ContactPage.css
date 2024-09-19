@@ -1,0 +1,49 @@
+.contact-page {
+    background-color: black;
+    color: #CD9E53; /* Text color for contrast */
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 20px;
+  }
+  
+  .contact-content {
+    border: 1px solid #CD9E53;
+    padding: 20px;
+    background-color: black;
+    color: whitesmoke; /* Ensure text is visible on white background */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-top: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #CD9E53;
+  }
+  
+  .contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #CD9E53;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #a97d3b; /* Slightly darker shade on hover */
+  }
+  

@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container styling */
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    color: aliceblue; /* Base text color */
+}
+
+/* Category title styling */
+.category-title {
+    font-size: 3.2rem; /* Smaller title size */
+    color: #fff; /* Darker color for better readability */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Flexbox for products row */
+.products-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Product item styling */
+.product-item {
+    border: 1px solid #CD9E53;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(25% - 20px); /* 4 items per row with space between */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Remove underline from links */
+.product-link {
+    text-decoration: none;
+    color: inherit; /* Use the color of the parent element */
+}
+
+/* Product titles and prices */
+.product-item h2 {
+    font-size: 1.5rem; /* Slightly smaller font size for product titles */
+    color: whitesmoke; /* Color for product titles */
+    margin: 15px 0;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: whitesmoke; /* Color for product prices */
+}
+
+/* Product image container */
+.product-image-container {
+    width: 100%;
+    height: 350px; /* Fixed height for uniform image sizing */
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Main and hover images */
+.main-image, .hover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the container without distortion */
+}
+
+/* Hover effects */
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-item:hover .main-image {
+    opacity: 0;
+}
+
+.product-item:hover .hover-image {
+    opacity: 1;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Layout */
+
+/* For tablets: 2 items per row */
+@media screen and (max-width: 1024px) {
+    .product-item {
+        width: calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+/* For mobile devices: 1 item per row */
+@media screen and (max-width: 768px) {
+    .product-item {
+        width: 100%; /* 1 item per row */
+    }
+}

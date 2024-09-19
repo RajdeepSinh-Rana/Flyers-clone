@@ -1,0 +1,36 @@
+.DAYS{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .logobox{
+    height: 60vh;
+    width: 45%;
+    margin-left: 40px;
+
+  }
+  .img1o{
+    height: 90%;
+    width: 98%;
+  }
+  .textbox{
+    height: 100%;
+    width: 47%;
+    text-align: center;
+    color: whitesmoke;
+    overflow: hidden;
+    margin-right: 30px;
+
+  }
+  .ddy{
+    font-size: 3rem;
+    padding-top: 12%;
+    padding-bottom: 30px;
+  }
+  .rrt{
+    font-size: 18px;
+    padding-bottom: 20px;
+  }

@@ -1,0 +1,30 @@
+
+.Winnerbox{
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .scrolling{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .img-wrapper-box{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgsizebox{
+    height: 180px;
+    width: 95% ;
+    margin-left: 350px;
+  }
