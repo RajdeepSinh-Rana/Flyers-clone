@@ -6,6 +6,7 @@ import './SingleProductPage.css';
 import Navbar from '../components/Navbar';
 import Glory from '../components/Glory';
 import Winner from '../components/Winner';
+import HomeProduct from '../components/HomeProduct';
 
 const SingleProductPage = () => {
   const { id } = useParams();
@@ -128,6 +129,7 @@ const SingleProductPage = () => {
           </div>
         </div>
       </div>
+      <HomeProduct/>
       
     </>
   );
