@@ -16,7 +16,7 @@ const Winner = () => {
         { x: 0 },
         {
           x: -distance,
-          duration: 25, 
+          duration: 8, 
           ease: 'linear',
           repeat: -1,
           onRepeat: () => {

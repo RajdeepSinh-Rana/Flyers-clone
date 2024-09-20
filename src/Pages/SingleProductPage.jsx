@@ -110,27 +110,25 @@ const SingleProductPage = () => {
           </div>
           <div className="product-details">
             <h2>{product.name}</h2>
-            <p>{product.description}</p>
-            <p><strong>Price: </strong>${product.price}</p>
-            <p><strong>Rating: </strong>{product.rating} / 5</p>
             <div className="rating">
               {Array.from({ length: 5 }, (_, index) => (
                 <span
                   key={index}
                   className={`star ${index < product.rating ? 'filled' : ''}`}
-                >
+                  >
                   ★
                 </span>
               ))}
             </div>
+              <p><strong>Price: </strong>${product.price}</p>
+              <p>{product.description}</p>
             <button className="add-to-cart-button" onClick={handleAddToCart}>
               Add to Cart
             </button>
           </div>
         </div>
       </div>
-      <Glory/>
-      <Winner/>
+      
     </>
   );
 };

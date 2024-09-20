@@ -74,7 +74,7 @@
   background-color: #CD9E53;
   border-radius: 8px;
   border: none;
-  color: white;
+  color: black;
   font-size: 1rem; /* Adjust font size for button */
 }
 
@@ -116,14 +116,14 @@
 @media (max-width: 480px) {
   
   .sptextbox {
-    width: 50%;
-    font-size: 0.2rem; 
-    border: 1px solid red;
+    width: 90%;
+    font-size: 15px; 
+    /* border: 1px solid red; */
   }
 .sptextbox h3{
-  font-size: 20px
+  font-size: 30px
 }
   .spimgbox {
-    height: 150px; /* Adjust height for very small screens */
+    height: 350px; /* Adjust height for very small screens */
   }
 }
