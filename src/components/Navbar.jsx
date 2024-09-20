@@ -70,7 +70,7 @@ const Navbar = ({ cartItems = [], setCartItems }) => {
           <div className="cart-total">
             <strong>Total: ${cartItems.reduce((total, item) => total + parseFloat(item.price), 0).toFixed(2)}</strong>
           </div>
-          <Link to="/checkout" className="checkout-button">Checkout</Link>
+          <Link to="/checkout" className="checkout-button">Checkout...</Link>
         </div>
       </header>
     </div>
